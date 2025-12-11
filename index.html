@@ -1,25 +1,58 @@
-<!--Identifica y corrige los errores del documento html. 
-No olvides colocar un comentario por cada cosa que modifiques-->
-
 <!DOCTYPE html>
-<html lang="en"> <!--Ejemplo: Faltaban comillas en el valor del atributo-->
-<head> <!-- Faltaba cerrar bien el comentario -->
-<meta charset="UTF-8"><!-- No existe el UTF-65  y comillas raras-->
+<html lang="es">
+<head>
+  <!-- Título de la página -->
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicio HTML - Corrige los errores</title> <!-- Meta incorrecta y el titulo estaba fuera de head -->
+  <title>Acerca de mí</title>
 </head>
 <body>
-<h1>World Wide Web</h1>
+  <!-- Encabezado principal con el nombre -->
+  <header>
+    <h1>estoreals</h1>
+  </header>
 
-<p>
-En informática, la <strong>World Wide Web</strong> (WWW) o red informática mundial comúnmente conocida como la web, es un sistema de distribución de documentos de hipertexto o hipermedios interconectados y accesibles vía Internet. Con un navegador web, un usuario visualiza sitios web compuestos de páginas web que pueden contener texto, imágenes, vídeos u otros contenidos multimedia, y navega a través de esas páginas usando hiperenlaces.</p> <!-- no ceeró el P y Strong -->
+  <!-- Sección principal con foto y biografía -->
+  <main>
+    <section>
+      <h2 id="foto-bio">Sobre mí</h2>
 
-<h2>Historia</h2> <!-- Cerrar H2 -->
+      <!-- FOTO -->
+      <figure>
+        <img src="./Me.jpeg" alt="Foto mia" width="300" height="300">
+        <figcaption>Foto de estoreals</figcaption>
+      </figure>
 
-<p>
-La web se desarrolló entre marzo de 1989 y diciembre de 1990 por el inglés Tim Berners-Lee con la ayuda del belga Robert Cailliau mientras trabajaban en el <em>CERN en Ginebra, Suiza, y publicado en 1992.</em>
-</p> <!-- No cerró el em -->
+      <!-- BIOGRAFÍA -->
+      <p>
+        Hola, soy Hector. Soy desarrollador java full stack Me gusta mucho jugar videojuegos y comer papitas fritas :3
+      </p>
+    </section>
 
-<p>Fuente: <em>Wikipedia</em></p> <!-- Se cerr+o el p Antes de Em -->
-</body> <!-- Faltó cerrar body -->
-</html><!-- y cerra HTML -->
+    <section>
+      <h2 id="hobbies">Hobbies</h2>
+      <ul>
+        <li>Diseño UI/UX</li>
+        <li>Programación</li>
+        <li>Jugar League of legends y marvel rivals</li>
+        <li>escuchar musica y el cosplay</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 id="musica">Mi top 5 de música favorita del momento</h2>
+      <ol>
+        <li><br><iframe width="560" height="315" src="https://www.youtube.com/embed/NZVMopW_jUo?si=btp1dB4K3HYePvJz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+        <li><br><iframe width="560" height="315" src="https://www.youtube.com/embed/UHL9FeoytAk?si=Y0dv0hC1nG9PUrA-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+        <li><br><iframe width="560" height="315" src="https://www.youtube.com/embed/yebNIHKAC4A?si=VwDQf2IRnSPFI2Ll" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+        <li><br><iframe width="560" height="315" src="https://www.youtube.com/embed/NdFEl7bg8MM?si=aNxJgtbnX5Q958Eb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+        <li><br><iframe width="560" height="315" src="https://www.youtube.com/embed/aHYvmY3nV5U?si=ugzs1yAaH1k8K8HR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contacto: <a href="mailto:estoreals@gmail.com">estoreals@gmail.com</a></p>
+  </footer>
+</body>
+</html>
